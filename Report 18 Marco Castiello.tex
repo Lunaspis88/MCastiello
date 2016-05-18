@@ -1,0 +1,359 @@
+
+\documentclass[11pt,letterpaper]{report}
+
+\usepackage{caption}
+\usepackage[osf]{mathpazo} 
+\usepackage{amsmath} 
+\usepackage{url} 
+\usepackage{hyperref} 
+\usepackage{graphicx}
+\usepackage{apalike}
+\let\bibhang\relax
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\usepackage[usenames,dvipsnames]{color}
+\pagenumbering{arabic}
+
+\usepackage{geometry} 
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=20mm,
+ right=20mm,
+ top=10mm,
+ bottom=20mm,
+ }
+
+ \usepackage{titlesec}
+\titleformat
+{\chapter} % command
+[display] % shape
+{\bfseries\Large} % forma
+{Chapter \thechapter} % label
+{0.1ex} % sep{0.5ex} % sep
+{
+    \rule{\textwidth}{0.3pt}
+    \vspace{1ex}
+    \centering
+} 
+[
+\vspace{-0.1ex}
+\rule{\textwidth}{0.3pt}
+]
+
+\begin{document}
+\begin{center}
+
+\begin{figure}[!h]
+\centering
+    \includegraphics[scale=1]{FIGURES/Logos.png}
+\end{figure}
+
+\vspace{70mm}
+
+\noindent{\huge{\textbf{\textcolor{MidnightBlue}{Braincase anatomy of petalichthyids: implications for early gnathostome phylogeny}}}}
+
+\vspace{20mm}
+
+{\large{\textbf{Marco Castiello}}} 
+
+CID: 00892122
+
+\end{center}
+\vspace{50mm}
+Supervisor: Dr. Martin D. Brazeau
+\vspace{50mm}
+
+\newpage
+\chapter{\LARGE{\textcolor{MidnightBlue}{Introduction and background}}}
+Living vertebrates fall into two major clades, the cyclostomes (hagfishes and lampreys) and the gnathostomes (jawed vertebrates). Gnathostomes constitute the vast majority of living vertebrates, comprising both chondrichthyans (sharks, skates, rays, and ratfishes) and osteichthyans (bony fishes and tetrapods). In spite of a general scientific consensus on gnathostome deep phylogenetic relationships, our understanding of their early morphological history is still unclear \citep{brazeau2015origin}. This is mainly because their origin occurred at an extremely deep time, so that the extinction of numerous lineages during the more than 420 million years of gnathostome evolution has left a huge morphological gap between extant jawless and jawed vertebrates. For that reason, looking at the fossil record can provide us with some essential clues about their deep evolutionary history and the morphology of the earliest gnathostomes and their relatives.
+
+\begin{figure}[!h]
+\centering
+    \includegraphics[scale=0.35]{FIGURES/timetable.png}
+\caption{\footnotesize{Composite tree showing the relationships of modern gnathostome lineages and their jawless and jawed Palaeozoic representatives through time, with some taxa omitted for clarity and including the key petalichthyid taxa analysed in this study. Topology and time calibration from \citealt{Zhu1996a} for Petalichthyida and \citealt{brazeau2015origin} for the rest of the taxa.}}
+\label{gnathotable}
+\end{figure}
+
+The fossil record of early vertebrates from the Palaeozoic Era (about 541 - 252 million years ago), has provided the early representative of the modern jawed lineages (chondrichthyans and osteichthyans), which together delimit the gnathostome crown-group, as well as an array of enigmatic jawless and jawed forms (fig. \ref{gnathotable}). In the past these animals, traditionally referred as the jawless “ostracoderms” and the jawed “placoderms”, have only been interpreted in the light of their own anatomy. More recent works, instead, placing them in the phylogenetics context of vertebrates more widely, have instead recognized them as being a paraphyletic array of stem gnathostomes \citep{Forey1984,Forey1993,Donoghue2000,Janvier2008,Janvier2015}. Therefore, their anatomical diversity helps document how the body plan of modern gnathostome was progressively shaped over millions of years.
+
+Even though the fossil record of these early vertebrates has been known and studied for almost two centuries, the transition from jawless to jawed vertebrates and the phylogeny of the more crown-ward parts of the gnathostome stem lineage remain the principal problems in the study of the origin of modern jawed gnathostomes. New discoveries and reinvestigations of several stem gnathostomes have recently cast doubts on our current understanding of their relationships and have shifted our interpretations of the evolutionary meaning of the different lineages \citep{brazeau2009braincase,Gai2011,zhu2013silurian,giles2015osteichthyan}. In particular, among the gnathostome stem-groups, the debate on placoderm monophyly has opened several questions about the extent to which they can help us reconstructing the morphology of modern gnathostome ancestor (see \citealt{brazeau2015origin}).
+
+Within these Palaeozoic forms, placoderms represent the only examples of stem-group gnathostomes known to have jaws. Placoderms are characterized by an heavy dermal exoskeleton, covering the head and the shoulder girdle, and by bony jaw plates. Ranging from the early Silurian to the Late Devonian, they represent one of the most diverse groups of Palaeozoic fish. Several different placoderm subgroups have been recognized \citep{Stensi1969,Denison1978,Janvier1996}, historically distinguished by the pattern of dermal plates and ornamentation (see \citealt{Young2010} for a brief review). Placoderms possess pelvic fins and three pairs of semicircular canals and these characters, in addition to jaws, support their phylogenetic affinity to crown gnathostomes  to the exclusion of all other stem-group gnathostomes \citep{Young1986,Goujet2001,goujet2004placoderm}. Hence, they occupy an important position in studies of character transformation near the origin of the last common ancestor of modern gnathostomes. 
+
+\begin{figure}[!h]
+\centering
+    \includegraphics[scale=0.8]{FIGURES/Placodiversity.png}
+\caption{\footnotesize{Restoration of various placoderms (not in scale) to show placoderms diversity. (a) The antiarch \textit{Bothriolepis}; (b) \textit{Materpiscis}, a ptyctodontid; (c) \textit{Gemuendina}, a rhenanind; (d) the petalichthyid \textit{Lunaspis}; (f), \textit{Wuttagoonaspis}, a wuttagoonaspids arthrodire; (e), \textit{Entelognathus}, a placoderm with osteichthyan-like jaw bones; (g) the arthrodire \textit{Dunkleosteus}. Pictures from http://www.eartharchives.org, Kahless28 on DeviantArt, \citealt{Young2010}, \citealt{zhu2013silurian}, Dmitry Bogdanov on Wikipedia.}}
+\label{placodiversity}
+\end{figure}
+
+Despite the vast fossil archive of placoderms and their great diversity, our understanding of this group is heavily influenced by its most diverse clade, Arthrodira. Arthrodires have been studied in great details due to the good preservation of their head skeleton and therefore are often used as the interpretive model for placoderms. However, recent studies focussed on less known sub-groups of placoderms have often found unexpected combinations of anatomical characters. These have highlighted how the dominance of studies on arthrodiran placoderms is in fact biasing our perspective on an instead rather morphologically diverse group of animals (fig. \ref{placodiversity}) \citep{long2009devonian,long2015copulation,Rucklin2012,brazeau2014characters,Dupret2014}.
+
+Among the more obscure subgroups of placoderms, Petalichthyida, for instance, has recently become central in the debate about placoderm relationships and primitive gnathostomes anatomical condition \citep{Janvier1996a,brazeau2014characters}. Petalichthyida is a sub-group of flat-headed placoderms with dorsolaterally facing eyes, probably having had a demersal habit, characterized roughly by an elongated median skull-roofing bone (nuchal plate) and a unique pattern of the sensory line systems \citep{Denison1975,Zhu1991}. In addition, they exhibit several endocranial traits recalling osteostracans, a group considered the nearest (or next-nearest) jawless outgroup to the gnathostomes \citep{Donoghue2001,Donoghue2006}, for example in the morphology of the facial nerve, the jugular vein and the orbit (fig. \ref{placocomparison}). In fact, petalichthyids exhibit a unique combination of endocranial traits between the jawless osteostracans and jawed gnathostomes. As a consequence, these differences between petalichthyids and the other placoderms have led some authors to question placoderm monophyly and to suggest that they instead represent a sub-grade of stem gnathostomes \citep{brazeau2009braincase,davis2012,zhu2013silurian,Dupret2014,giles2015osteichthyan}. 
+
+Whether placoderms are monophyletic or paraphyletic will have a different impact on the significance of the similarities between the petalichthyids and the jawless osteostracan. For instance, the monophyly of placoderms could mean that their shared cranial condition could represent either retained primitive gnathostomes conditions or independent acquisitions. Conversely a paraphyletic Placodermi could indicate that the petalichthyids are the sister-group of all other jawed vertebrates.  This means that these differences in the interpretations of the homology and the polarity of these petalichthyids features can greatly impact whether they can inform us about gnathostomes neurocranial character acquisition and the origin of jaws.
+
+\begin{figure}[!h]
+\centering
+    \includegraphics[scale=0.24]{FIGURES/intermediate.png}
+\caption{\footnotesize{The position of the jugular vein and the facial nerve divisions in various gnathostomes braincases. Modified from \citep{brazeau2014characters}.}}
+\label{placocomparison}
+\end{figure}
+
+Recent studies on early gnathostomes evolution have received great insight from the examination of braincase morphology. Being present in every vertebrate, the braincase is vital to be able to compare early vertebrates, a rather anatomically disparate group. Thus, comprehensive descriptions of braincase morphology constitute the base for our phylogenetic studies and interpretations of all placoderm diversity. 
+
+To date, an handful of monographic treated descriptions of placoderm endocrania are available \citep{Stensi1925,Stensi1950,Stensi1963b,Stensi1969,Young1980,Goujet1984a}. Nevertheless, only few works take in account petalichthyids and other non-arthrodiran placoderms. This underrepresentation of anatomical diversity can severely bias phylogenetic investigations and our understanding of the cranial condition near the gnathostome crown node is in fact highly influenced by arthrodires. However, arthrodires have been resolved as a highly nested group in both monophyletic and paraphyletic hypotheses for placoderm phylogeny (e.g. \citealt{Denison1978,goujet2004placoderm,zhu2013silurian,giles2015osteichthyan}) and therefore they may not be representative of primitive condition for a presumed placoderm clade. The role of arthrodires and other placoderms in our understanding of the assemblage of modern gnathostome anatomy cannot be clearly comprehended without a better insight into the phylogenetic relationships of the entirely of placoderm diversity.  
+
+Due to a relative lack of knowledge on their endoskeleton, petalichthyids are represented by only a very small sample in contemporary gnathostome phylogenies \citep{brazeau2009braincase,davis2012,zhu2013silurian,Dupret2014,giles2015osteichthyan} (see chapter 5). For that reason, the initial empirical goal of this project is to generate new anatomical and comparative data on petalichthyid neurocrania examining three genera: \textit{Shearsbyaspis}, \textit{Ellopetalichthys} and \textit{Macropetalichthys}. Each of these taxa is represented by rare, well preserved braincase material in varying degrees of completeness. We will use new chemical preparation techniques and x-ray computed microtomography scanning to obtain enhanced details of the braincase of these petalichthyids that were not available in earlier investigations. Our study will provide the first skull and endocast of petalichthyids investigated with CT scanning, adding new data on this poorly studied group of early vertebrates. Focusing on petalichthyids will then help balance this discrepancy and illuminate the diversity of stem gnathostomes cranial morphology. The resultant phylogenetically useful characters can test existing hypotheses of petalichthyid and placoderm relationships.
+
+
+\newpage
+\chapter{\LARGE{\textcolor{MidnightBlue}{Endocranial morphology of \textit{Shearsbyaspis}}}}
+\smallskip
+\section{Introduction}
+Since the works of \cite{Stensi1925,Stensi1950,Stensi1963b,Stensi1969}, only a few descriptions on non-arthrodiran braincases have been published \citep{Ørvig1957,Gross1959,Young1978,Young1980,Goujet1985,lelievre1995,Long1997,Trinajstic2012}. Nevertheless, a number of exceptionally preserved, three-dimensional specimens of non-arthrodiran placoderms do exist in collections and are available to be studied in detail. One of these is the holotype of \textit{Shearsbyaspis oepiki} \citealt{Young1985}, from the Early Devonian of Australia. 
+
+After acid preparation, \cite{Young1985} was able to illustrate some important details of the orbit and the anterolateral margin of the braincase. However, the ventral side of the specimen was covered by a hard silty matrix which resisted acid preparation, so it was not possible to analyse most of the endocranial morphology imprisoned in the matrix. Nevertheless, the previous chemical preparation has removed substantial amounts of matrix inside the specimen; this has facilitated exceptionally high quality CT scans. This allow us to examine the braincase inside the rock and to gain a good image of both the walls of the braincase and the brain cavity, providing a comparative model for \textit{Macropetalichthys} and \textit{Brindabellaspis}, and helping to obtain new data on non-arthrodiran placoderm neurocranial anatomy.
+
+\begin{figure}[!h]
+\centering
+    \includegraphics[scale=0.7]{FIGURES/shearsbyasgholotype.jpg}
+\caption{\footnotesize{NHM P33580, the holotype of \textit{Shearsbyaspis oepiki}, an incomplete skull, dorsal view.}}
+\label{shearsbyholo}
+\end{figure}
+
+\section{Material and Methods}
+
+The following description of \textit{Shearsbyaspis oepiki} \citealt{Young1985} is based on the holotype P33580, held in the Natural History Museum of London (NHM), an incomplete skull-roof with endocranial remains (fig. \ref{shearsbyholo}). It was collected in the Murrumbidgee Group of the Taemas Formation, in New South Wales, Australia, dated to the Early Devonian (Emsian), around 405-395 million years ago. It was originally described and named by \cite{Young1985} after chemical preparation with acetic acid, following the \cite{Toombs1948} and \cite{Toombs1959} technques. 
+
+We used modern x-ray computed microtomography to investigate the internal anatomy of this well-preserved three-dimensional specimen, a technique which was previously unavailable at the time of Young’s description. We scanned it at the Imaging and Analysis Center at the Natural History Museum in London, using an X-ray micro-CT scanner. A total of 6284 projections were made, using a 0.1 mm thick copper filter. Scan X-ray setting are 180 kV, 180 µA for P33580 (Voxel size 15.3 µm). The result was segmented with the software Mimics 15.01 (Materialise Technologielaan, Leuven, Belgium).
+
+\textbf{Anatomical abbreviations}: \textbf{II}, optic nerve foramen; \textbf{III}, oculomotor nerve foramen; \textbf{IV}, trochlear nerve foramen; \textbf{V}, trigeminal nerve foramen; \textbf{VI}, abduscens nerve foramen; \textbf{VII}, facial nerve foramen; \textbf{VIIop.l}, foramen for the ophthalmicus lateralis branch of the facial nerve; \textbf{VIII}, acoustic nerve foramen; \textbf{IX}, glossopharyngeal nerve foramen; \textbf{a.amp}, anterior ampulla; \textbf{a.s.c}, anterior semicircular canal; \textbf{b.v}, blood vessel canal; \textbf{c.v.ju}, jugular vein canal; \textbf{c.v.pit}, pituitary vein canal; \textbf{e.amp}, external ampulla; \textbf{e.s.c}, external semicircular canal; \textbf{eys}, eyestalk attachment area; \textbf{l.p.s}, lateral preorbital space; \textbf{my3}, myodome for oculomotorius-innervated eye muscle; \textbf{my6}, myodome for abducens-innervated eye muscle; \textbf{sac}, sacculus; \textbf{sub.s}, subocular shelf; \textbf{uc}, utriculus  
+
+\section{Anatomical description}
+
+P33580 consists of an incomplete skull with most of the underlying neurocranial ossification preserved. The anterior most and posterior most areas are damaged so that the tip of the rostral plate and the area behind the otic region are missing. The dorsal side of the skull roof is exposed and well preserved, with clear pores of the lateral line system, the pineal foramen and the orbits. The left orbit is exposed and an attempted description has already been presented in the original work from \cite{Young1985}, although the CT reveals that some areas of the orbital wall are broken or not preserved. On the contrary, the right orbit is instead filled by the matrix, thus relatively untouched by chemical or mechanical damage, so that the CT images in this area allows a more complete reconstruction. Together, the preserved portions of the left and right orbits provide complementary details on the anatomical structures of the orbit. The visceral surface of the skull-roof cannot be seen, as it is articulated and fused with the dorsal surface of the braincase. 
+
+In overall shape the neurocranium (fig. \ref{shearsby3d} B, D) is broader than deeper, with an elongated ethmoid region and a wide optic area with large orbits, each floored by a well-developed sub-ocular shelf. Anterior to the orbits, a large pre-orbital space is present (l.p.s, fig. \ref{shearsbylateral}), similar to that observable in \textit{Macropetalichthys} \citep{Stensi1925,Stensi1969} and \textit{Brindabellaspis} \citep{Young1980}. A parasphenoid is also visible, connected with the buccohypophysial canal on the ventral side of the braincase. On the ventral endocranial surface, several grooves and foramina can be recognized for the passage of blood vessels and branches of nerves (fig. \ref{shearsby3d} A, C). Evident is the course of the efferent pseudobranchial artery, which exits near the buccohypophysial opening running into a distinct groove on the ventral side of the sub-ocular shelf. 
+
+\begin{figure}[!h]
+\centering
+    \includegraphics[scale=0.35]{FIGURES/shearsbyaspislateralreconstructionfinal.png}
+\caption{\footnotesize{Interpretive illustration of the right side of the braincase of NHM P33580 with labelled anatomical structures.}}
+\label{shearsbylateral}
+\end{figure}
+
+On the mesial wall of the orbit (fig. \ref{shearsbylateral}) is a large-diameter opening for the optic nerve (II). Several foramina are positioned posterior to this opening and are instead related to the nerves connected to the extrinsic muscles of the eyes (the oculomotor III, trochlear IV and abducens nerve VI). These foramina are related to depressions on the orbital wall, representing myodomes where these muscles were located (my3, my6). A series of small foramina on the upper part of the mesial wall are associated with the opening for the opthalmicus lateralis branch of the facial nerve (VIIop.l), a sensorial nerve. The orbital floor is occupied centrally by a large oval opening surrounded by an everted rim of perichondral bone, representing the area of attachment of the eye-stalk (eys). In its postero-ventral portion, the orbital wall is pierced by a large opening leading into a sac-like structure that is hypothesized to have contained branches of the trigeminal nerve (V) and the pituitary vein (c.v.pit) (fig. \ref{shearsbylateral}), as in \textit{Macropetalichthys} \citep{Stensi1969} and osteostracans \citep{Janvier1985,Janvier1996}.
+
+The good preservation of the cerebral cavity, enclosed in perichondral tissue, allows a reproduction of its endocast and inferences of the brain morphology. In general, the endocast appears long and narrow. The telencephalon shows two well-developed olfactory lobes from which branch two anteriorly directed elongated olfactory ducts, in a way similar to that of \textit{Macropetalichthys} \citep{Stensi1925,Stensi1963a,Stensi1969}. The diencephalon is stout and very wide, carrying the optic nerve (II), the pineal gland and the hypophysis. The pineal organ opens on the dermal skull through a foramen between the orbits at the same level of the optic tract. The hypophysial duct is placed slightly posteriorly to the level of the pineal gland and projects anteroventrally, opening through the palate with a single foramen in the parasphenoid. The mesencephalon can be recognized carrying the oculomotor nerve (III) and interestingly not the trochlear nerve (IV). This condition seems different from what could be observed in other placoderms. The hindbrain is well preserved so that the bounds of its two divisions, the metencephalon and the myelencephalon, can be easily distinguished. In its overall shape it resembles that of \textit{Brindabellaspis} \citep{Young1980}, with a well-developed metencephalon constituted by two symmetrical rounded lobes, the trigeminal recesses. The myelencephalon is the point of origin of the remaining cranial nerves and runs posteriorly until the end of the brain cavity. Unfortunately, in this specimen only the incomplete left anterior part of it is preserved.
+
+The labyrinth cavities are partially preserved. The right labyrinth shows the position and morphology of the vestibule apparatus and related cranial nerves entering in it (fig. \ref{shearsby3d}). As in \textit{Macropetalichthys}, the saccular portion is very big and placed very close to the orbit, almost in contact each other. Unusually for a placoderm, the anterior ampulla (a.amp) is placed just behind the posterior wall of orbit, so that the anterior semicircular canal is very long (a.s.c). The latter crosses the sacculus (sac), extending towards the centre and enters in it above the point of connection between the labyrinth and the acoustic nerve (VIII). The anterior ampulla is connected to the external ampulla (e.amp) by a ventrally directed utriculus (uc). A small portion of the external semicircular canal (e.s.c) can be identified but unfortunately the posteriormost part of the labyrinth is not preserved on either side so it is not possible to observe the posterior ampulla and canal, nor the endolymphatic duct.
+
+\begin{figure}[!h]
+\centering
+    \includegraphics[scale=0.22]{FIGURES/Result.png}
+\caption{\footnotesize{3D models and corresponding drawings of NHM P33580. A, C: braincase and labyrinth in ventral view; B, D: endocast in ventral view}}
+\label{shearsby3d}
+\end{figure}
+
+\section{Discussion}
+
+Several differences are observed between the endocranial morphology of \textit{Shearsbyaspis} and other placoderms, especially arthrodires. The presence of a well-developed sub-ocular shelf, an anteroventrally projecting hypophysial duct, placed slightly posteriorly in respect of the pineal gland; a trigeminal recess located between the anterior part of the labyrinth cavity; and a deep sacculus, constitute important differences with that of arthrodires and crown gnathostomes and are instead reminiscent of the jawless osteostracans \citep{Janvier1985,Janvier1996a,brazeau2009braincase,brazeau2014characters,Janvier2015} and galeaspids \citep{Gai2011}, as well as present in some placoderms like \textit{Brindabellaspis} \citep{Young1980} and in \textit{Macropetalichthys} \citep{Stensi1925,Stensi1963b,Stensi1969}.
+
+Another important feature is that the midbrain carries only the oculomotor nerve (III), while the trochlear nerve (IV) is instead associated with the cerebellum, a similar condition of that of lampreys, osteostracans and \textit{Macropetalichthys} \citep{Nieuwenhuys1977,Janvier2008,Stensi1963a,Stensi1969}. This contrasts with the morphology of galeaspids, arthrodires, \textit{Romundina} and most crown gnathostomes, where the trochlear nerve branches out from the midbrain near to the oculomotor nerve \citep{Goujet1984a,Elliott2010,Pradel2010,Gai2011,Dupret2014,giles2014virtual} and is therefore a phylogenetically informative variable.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.5]{FIGURES/trigeminpit.png}
+\caption{\footnotesize{The position and morphology of the pituitary vein (pink) and the branches of the trigeminal nerve (blue and light blue) in various gnathostomes braincases. Redrawn from \citep{Stensi1963a,Stensi1969,Young1980,Maisey2005,Dupret2014}.}}
+\label{trigempit}
+\end{figure}
+
+The pituitary vein canal morphology is also variable within placoderms. In \textit{Shearsbyaspis} and \textit{Macropetalichthys}, two separate pituitary vein canals enter the orbit, sharing an opening with the trigeminal nerve. This peculiarity is also present in the jawless osteostracans and galeaspids and differs from what could be seen instead in arthrodires, \textit{Brindabellaspis}, \textit{Romundina}, rhenanids and crown gnathostomes (fig. \ref{trigempit}), where there is instead a united pituitary canal that enters in the orbit through an opening separate from the trigeminal foramen \citep{Stensi1963a,Stensi1969,Young1980,Goujet1984a,Dupret2014,Maisey2005}. 
+
+Some other features are instead different from those which can be seen in \textit{Macropetalichthys}, as the position of the anterior ampulla and the general shape of the labyrinth. Moreover, there is evidence of a parasphenoid, a bone that has not been found before in Petalichthyida and was thought to be a feature of arthrodires among placoderms. This can suggest a possible close affinity between these two subgroups, challenging the homology of the character they share with the jawless osteostracans and thus leading to a substantially different interpretation of petalichthyids on the gnathostome tree (see chapter 6).
+
+Some of the characters obtained in this work, such as the morphology of the pituitary vein, have rarely been considered in morphological data matrices of early gnathostomes. The addition of these is an opportunity to obtain a more comprehensive investigation of stem gnathostome character diversity, potentially impacting early gnathostome phylogeny. Clarifying the role played by petalichthyids can therefore help in resolving the debate about placoderms phylogeny, giving us a better clue about what these groups of early vertebrates can and cannot tell us about the polarity of modern vertebrate features and their characters acquisition sequence.
+
+\newpage
+\chapter{\LARGE{\textcolor{MidnightBlue}{Endocranial morphology of \textit{Ellopetalichthys}}}}
+
+\section{Introduction}
+
+ \textit{Ellopetalichthys scheii} \citealt{Kjaer1915}, from Ellesmere Island, in the Canadian Arctic Archipelago, is another petalichthyid recorded from a partially complete, three-dimensionally preserved specimen. The specimen was described originally by \cite{Kjaer1915}, who assigned it to a new species of \textit{Macropetalichthys}, \textit{M. scheii}. Lately, it was then briefly redescribed by \cite{Ørvig1957} and assigned to the new genus \textit{Ellopetalichthys}. 
+
+ As noticed by \cite{Ørvig1957}, it exhibits ossifications in the posterior part of the endocranium that show a markedly different morphology to that of \textit{Macropetalichthys}. Here, thus, we investigate the neurocranial morphology of \textit{Ellopetalichthys} using modern tomographic techniques. As revealed from our CT scan, the specimen shows details of the orbits and the brain cavity, not accessible to previous investigation, as well as the otic capsule and the occipital region, not fully preserved in \textit{Shearsbyaspis}. Therefore, it will represent an important complement to our dataset on petalichthyid braincases, help to have a better picture of petalichthyids neurocranial anatomy.
+
+\begin{figure}[!h]
+\centering
+    \includegraphics[scale=0.9]{FIGURES/Ellopetalichthysoriginal.png}
+\caption{\footnotesize{The holotype of \textit{Ellopetalichthys scheii} (NHMO) A13047, as interpreted by \citealt{Ørvig1957}. }}
+\label{ellooriginal}
+\end{figure}
+
+\section{Materials and Methods}
+We investigate the holotype of \textit{Ellopetalichthys scheii} \citealt{Kjaer1915}, Natural History Museum, University of Oslo (NHMO) A13047 (fig. \ref{ellooriginal}). It consists of an incompletely preserved dermal skull-roof and exposed posterior part of the endocranium. The most anterior part of the skull is missing but the rest of the skull is well preserved and three-dimensional.
+
+We scanned the specimen at the Imaging and Analysis Center at the Natural History Museum in London, using X-ray micro-CT scanner. We took 6284 x-ray projections. Scan X-ray setting are 165 kV, 170 µA, 0.1 mm thick copper filter (Voxel size 28,6 µm). We will undertake segmentation of the resulting tomographic image sets using the software Mimics 15.01 (Materialise Technologielaan, Leuven, Belgium). 
+
+\section{State of the work}
+The \textit{Ellopetalichthys} specimen has been already scanned at the Natural History Museum and the segmentation process of the resulting dataset has already been started. It is preserved in 3D and exhibits ossifications in the posterior part of the endocranium that show some differences with \textit{Macropetalichthys}. In the original description \cite{Ørvig1957} stated that in \textit{Ellopetalichthys} only the posterior part of the endocranium is ossified and that the ethmoid and orbital regions may be reduced or absent. This is probably because he was unable to observe the anterior ventral side of the specimen, which is surrounded by the matrix. The CT data (fig. \ref{ellocoronal}) and the preliminary 3D model (fig. \ref{ello3D}) show instead that several features of the neurocranium are ossified and could be observed, as the course of some nerve and the morphology of the brain cavity, the labyrinth and part of the orbital wall. 
+
+\begin{figure}[!h]
+\centering
+    \includegraphics[scale=0.3]{FIGURES/ellopetalichthyscoronal.png}
+\caption{\footnotesize{Tomographic sub-coronal section of \textit{Ellopetalichthys} (NHMO) A13047.}}
+\label{ellocoronal}
+\end{figure}
+
+\begin{figure}[!h]
+\centering
+    \includegraphics[scale=1]{FIGURES/ellopetalichthysvertical.png}
+\caption{\footnotesize{(Above) 3D model of \textit{Ellopetalichthys} (NHMO) A13047 in dorsal view. (Below) Same view without the dermal skull roof layer.}}
+\label{ello3D}
+\end{figure}
+
+\newpage
+\chapter{\LARGE{\textcolor{MidnightBlue}{Redescription of \textit{Macropetalichthys} {Stensi{\"o} 1925 based on chemically prepared specimens}}}}
+
+\section{Introduction}
+\textit{Macropetalichthys} represents the best known petalichthyid. The first detailed description of this placoderm was carried out by \cite{Stensi1925} using mechanical preparation on material from the Middle Devonian of U.S.A. Subsequently, he provided a revision of his reconstruction of the internal anatomy of \textit{Macropetalichthys}, together with a detailed analysis of the neurocranium of some other placoderms \citep{Stensi1963a,Stensi1963b,Stensi1969}, dispensing a great amount of information on the endocranial anatomy morphology of this placoderm. However, no other comprehensive examinations of petalichthyids internal anatomy have ever been carried out since, meaning that our knowledge of petalichthyids relies solely on Stensi{\"o}'s interpretations, at that time driven by his preconception that placoderms where a group of ancestral chondrichthyans. 
+
+Stensi{\"o}'s description of \textit{Macropetalichthys} was based on the Sollas' serial grinding technique \citep{sollas1904method,Sollas201}, an invasive technique that can obliterate the finest structure of the braincase and brain cavity. This also makes difficult to check and replicate previous interpretations, due to the destruction of the specimen. Here, we will use chemical fossil preparation techniques and modern non-invasive techniques on undescribed \textit{Macropetalichthys} materials (fig. \ref{macro}). Our use of modern preparation technique on this new material represents an opportunity to produce the most detailed preparations so far available. The digestion of the limestone will permit a better resolution with CT techniques, as the limestone matrix surrounding the specimen has similar density compared to bone. The production of a 3D dataset will offer an occasion to obtain further details and compare them with that of \textit{Shearsbyaspis} and \textit{Ellopetalichthys}, for which the same preparation techniques have provided excellent result. 
+
+\section{Materials and Methods}
+The new undescribed materials consist of several specimens from the Cleveland Museum of Natural History, collected from the Middle Devonian Onandaga Limestone, in Ohio. The specimens will be prepared using formic acid bath and resin embedding techniques. First, the exposed portion of the specimen will be embedded top-side down in acid-resistant resin to maintain its integrity after the matrix is digested. Then it will be soaked in formic acid, which will react with the matrix dissolving it. At this stage, it is very important to buffer the reaction to avoid having an aggressive solution that may destroy the bone. After a certain amount of time, the specimen will be rinsed in water, to avoid the presence of residual acid that may erode the specimen after treatment. The procedure will be repeated until a satisfactory status. Whenever the bones became exposed they will be covered with paraloid, a hardening agent that shield and protect the bones. Two specimens have already being embedded in the epoxy resin and the bathing procedure has been started for one of them. 
+
+\begin{figure}[!h]
+\centering
+    \includegraphics[scale=0.9]{FIGURES/macropetalichthys2.png}
+\caption{\footnotesize{One of the new specimens of \textit{Macropetalichthys} from the Onandaga Formation.}}
+\label{macro}
+\end{figure}
+
+\newpage
+\chapter{\LARGE{\textcolor{MidnightBlue}{Phylogenetic analysis and implication for placoderm monophyly}}}
+
+\section{Introduction and literature review}
+Even though placoderms have been known and studied for nearly two centuries, their systematic position and their relationship with other early vertebrates remains highly debated. Their taxonomic history has been chequered, primarily depending on how placoderm features have been interpreted, often reflecting the scientific fashions of particular eras. Erected by \cite{MCoy1848}, Placodermi have been traditionally regarded as a monophyletic group (e.g. \citealt{Stensi1969,Moy-Thomas1971,Denison1975,Denison1978,Miles1977,Jarvik1980,Goujet1982,Goujet1984b,Goujet2001,Young1986,Janvier1996}). However, for long time, the primary interest of palaeoichthyologists was investigating the intrarelationships of placoderms rather than evaluating their monophyly. 
+
+Placoderm monophyly was given its first explicit empirical justification by \cite{Goujet1982,Goujet1984b,Goujet2001} and later \cite{Young1986,Young2008a,Young2009,Young2010}, who proposed a series of placoderm synapomorphies. However, these lists of synapomorphies were based on the prior assumption of placoderm monophyly. Recently, comprehensive analysis of gnathostome interrelationships reject their conclusions \citep{brazeau2009braincase,davis2012,zhu2013silurian,Dupret2014,long2015copulation,giles2015osteichthyan}, failing to recover placoderm monophyly. Instead, these resolved the placoderms as a paraphyletic assemblage of jawed stem gnathostomes lying between the jawless forms and the gnathostome crown node. Indeed, the characters proposed as placoderm synapomorphies have been shown to be either not unique to placoderms, possibly gnathostomes plesiomorphies, or not universally distributed in all placoderm subgroups, therefore being inadequate to group all placoderms \textit{a priori} \citep{brazeau2014characters}. Furthermore, many of these characters cannot be considered valid as discrete characters, being instead compound characters (critical analysis in \citealt{brazeau2014characters}). 
+
+Although recent phylogenetic studies reject placoderm monophyly, these studies descend from the dataset published by \cite{brazeau2009braincase} and are, thus, not independent tests of placoderm phylogeny. Also, despite the great diversity of the placoderm fossil record, only a small proportion of it features in these works and in particular they did not include a highly extensive set of non-arthrodire placoderms (fig. \ref{clado}). For or that reason they don't adequately sample early gnathostome diversity, possibily leading to ambiguities in placoderm intrarelationship. This means that the role of placoderms in our understanding of gnathostomes evolution is still unclear (see chapter 1). 
+
+A more inclusive analysis, especially concerning non arthrodire examples, is required to illuminate stem gnathostome relationships and the deep evolutionary history of gnathostome morphological traits. Moreover, discerning between primitive and derived features in jawed vertebrates require a deeper comparison with jawless fishes, particularly important considering the combination of traits present in petalichthyid-like placoderms. The addition of new taxa, more accurate character coding, and new characters will provide a critical test of the current array of phylogenetic hypotheses. 
+
+Modification of existing matrices and characters will be made in light of their critical evaluation and refined comparisons generated in this study. The outcome of this phylogenetic analysis will be used to generate mappings of ancestral character states derived from the dataset. A more adequate resolution of placoderms relationship will have deep consequences for our comprehension of the origin of modern jawed vertebrates.
+
+\begin{figure}[!h]
+\centering
+    \includegraphics[scale=0.2]{FIGURES/cladogramswhite.png}
+\caption{\footnotesize{Example of recent hypotheses of early gnathostome relationships and the number of placoderms and petalichthyids taken into account. Modified from \citealt{zhu2013silurian,long2015copulation,giles2015osteichthyan}.}}
+\label{clado}
+\end{figure}
+
+\section{Revision of Petalichthyida: diagnosis and the systematic intrarelationships}
+
+\begin{figure}[!h]
+\centering
+    \includegraphics[scale=1]{FIGURES/Petalichthyidadistribution.png}
+\caption{\footnotesize{Chrono- geographic distributions of petalichthyid genera. Data from \citealt{Zhu1996a,Vietnam,pan2015new}}}
+\label{petaldistrib}
+\end{figure}
+
+There are currently 18 described petalichthyid genera, distinguished mainly by the morphology of the skull roofing plates and the arrangement of the sensory canals. These include \textit{Macropetalichthys} \citep{Norwood1846}, \textit{Epipetalichthys} \citep{Stensi1950}, \textit{Lunaspis} \citep{broili1929}, \textit{Notopetalichthys} \citep{Woodward1941}; \textit{Ellopetalichthys} \citep{Ørvig1957}, \textit{Wijdeaspis} \citep{obruchev1964class}, \textit{Neopetalichthys} \citep{Liu1973}, \textit{Quasipetalichthys} \citep{Liu1973}, \textit{Sinopetalichthys} \citep{p1975lower}, \textit{Diandongpetalichthys} \citep{p1978devonian}, \textit{Xinanpetalichthys} \citep{p1978devonian}, \textit{Shearsbyaspis} \citep{Young1985}, \textit{Parapetalichthys} \citep{wang1988}, \textit{Eurycaraspis} \citep{Liu1991}, \textit{Brevipetalichthys} \citep{Ji1996}, \textit{Tongdzuylepis} \citep{Vietnam}, \textit{Pampetalichthys} \citep{Zhu2000}(Zhu 2000), \textit{Guangxipetalichthys} \citep{Zhu2000} and \textit{Pauropetalichthys} \citep{pan2015new}. Fragmentary remains assigned to petalichthyids have been found in several localities in South East Asia \citep{Wang2010} but these are poorly preserved and have been attributed to the group solely because of the morphology of the ornamentation, so their affinity is still uncertain. Petalichthyid remains have been found worldwide (fig. \ref{petaldistrib}). The oldest petalichthyid known is \textit{Diandongpetalichthys}, from the Upper Silurian/Lower Devonian of China. They peaked in diversity during the Lower Devonian, especially the Emsian stage, becoming rarer in the Middle and Late Devonian. The youngest taxon is \textit{Epipetalichthys}, from the Upper Devonian of Germany.
+
+Despite the good number of taxa known, the phylogenetic position of the Petalichthyida within the paraphyletic stem gnathostomes is still disputed and the hierarchic character distribution of Petalichthyida remains obscure. This is principally because up until now the only petalichthyid included in relevant phylogenetic analysis has been \textit{Macropetalichthys}, the only taxon known for its neurocranial anatomy. Furthermore, limited knowledge of the endocranial morphology of the Chinese forms like \textit{Diandongpetalichthys}, \textit{Eurycaraspis} and \textit{Pauropetalichthys}, make the relationship between them and the rest of the petalichthyids is still unclear. In fact, these Chinese form, known as the ''quasipetalichthyid'', have been suggested to be either sister group to the other petalichthyids \citep{Zhu1996a,pan2015new} or to be in a more distant phylogenetic position, closer to phyllolepid arthrodires \citep{giles2015osteichthyan}.
+
+A tentative diagnosis of the Petalichthyida has been proposed by \cite{Zhu1991}. He used the presence of two paranuchal plates and of “the typical petalichthyid pattern of sensory canals system” to assign \textit{Diandongpetalichthys} to Petalichthyida ''with little doubt'' (\citealt{Zhu1991}, pg. 180, 189). According to Zhu, this typical petalichthyid pattern includes the presence of enclosed deep sensory canals, the convergence of the supraorbital canals and the posterior pit lines, the absence of the central canal and the elongation of the main lateral canal behind the posterior pit line. These characters have been used to assign several taxa to Petalichthyida (e.g. \citealt{p1978devonian,Zhu1991,Zhu1996a}). However, some of these characters are also present in other non-petalichthyid placoderms (i.e. convergence of the supraorbital canals and posterior pit lines are visible in \textit{Brindabellaspis}, ptyctodontids and some arthrodires) and could instead represent plesiomorphic features for placoderms (fig. \ref{petalcompar}). 
+
+\begin{figure}[!h]
+\centering
+    \includegraphics[scale=0.165]{FIGURES/comparison.png}
+\caption{\footnotesize{Distribution of some “petalichthyid-like” characters in some petalichthyids and not petalichthyid placoderms.}}
+\label{petalcompar}
+\end{figure}
+
+A recently published phylogeny of the "quasipetalichthyids" \citep{pan2015new} resolved them as a paraphyletic assemblage, with some "quasipetalichthyids" constituting a monophyletic clade sister to the rest of the macropetalichthyids. However, this analysis only took into account a poor sample of petalichthyids diversity (6 taxa) and used only arthrodires (2 taxa) as an outgroup. Moreover this analysis found dermal and sensory line patterns characters as supporting synapomorphies for the monophyly of the petalichthyids. But, as pointed out above, these features might instead be plesiomorphic features as they are also present in other placoderms (not included in the data matrix). 
+
+\cite{Zhu1991}, and later \cite{Zhu1996a}, suggested potential petalichthyids synapomorphic characters that are not related to dermal bones or sensory line pattern. These characters are represented by a distinctive cranial joint articulation and narrow, stalk-like shaped parachordals. Petalichthyids possess a cranial joint articulation with a longitudinal dermal articular area, parallel to the length axis of the skull (fig. \ref{articular} a,c), with vertical oriented para-articular processes. This morphology is well preserved in \textit{Wijdeaspis} \citep{Young1978}, \textit{Macropetalichthys} \citep{Stensi1969}, \textit{Ellopetalichthys} \citep{Ørvig1957}, \textit{Eurycaraspis} \citep{Liu1991}, \textit{Diandongpetalichthys} \citep{p1978devonian} and \textit{Pauropetalichthys} \citep{pan2015new}. In \textit{Wijdeaspis} and \textit{Ellopetalichthys}, it is also possible to observe the two very peculiar long and narrow parachordals \citep{Ørvig1957,Young1978}. In some arthrodires and acanthothoracids, the dermal articular area and the para-articular process are instead transversal (fig. \ref{articular} b,d), with a condyle matched by an articular fossa, a condition referred as the “ginglymoid” neck join \citep{Long1984,Forey1986a,Gardiner1990,Goujet1984b,dupret2004phylogenetic,Young2009,Olive2011}. Still other placoderms, as for example actinolepids arthrodires, ptyctodonts, antiarchs and \textit{Entelognathus}, present an articulation constituted by overlapping surfaces between dermal bones, referred to as the “sliding joint” articulation  (e.g. \citealt{Denison1978,Young1979,Goujet1984b,Long1984,Forey1986a,dupret2004phylogenetic}.
+
+\begin{figure}[!h]
+\centering
+    \includegraphics[scale=1]{FIGURES/articularjoint.png}
+\caption{\footnotesize{The difference in the morphology of the cranio-articular joint between the petalichthyid \textit{Wijdeaspis} (a, ventral view; c, occipital view) and the \lq{acanthothoracid}\rq \textit{Arabosteus} (b,ventral view; d, occipital view). Redraw from \citealt{Young1978} and \citealt{Olive2011}.}}
+\label{articular}
+\end{figure}
+
+The distribution of the different types of cranial articulation have been used to investigate the systematic of placoderms, especially within arthrodires (e.g. \citealt{Denison1975,Miles1977,Young1979,Young1986,dupret2004phylogenetic,Dupret2007}. However, investigating the evolutionary history of this character remains problematic. While osteichthyans possess a sliding joint articulation \citep{Zhu2009}, similar to that of actinolepid arthrodires, phyllolepids, \textit{Wuttagoonaspis} and \textit{Entelognathus} \citep{Ritchie,Denison1978,Goujet1984a,zhu2013silurian}, osteostracans and galeaspids do not possess any trunk-head articulation. This prevents outgroup comparison and so the plesiomorphic state for jawed vertebrates remains unclear. This is particularly troublesome when this feature represents the only character linking some taxa to a group. 
+
+The inclusion in Petalichthyida of \textit{Eurycaraspis}, \textit{Diandongpetalichthys} and other ''quasipetalichthyids'', that otherwise possess many features resembling arthrodire \citep{Zhu1991,pan2015new}, rely specifically on the presence of the ''petalichthyids neck joint'', and some authors has suggested that Petalichthyida might be indeed a nested clade within Arthrodira. As an arthrodire affinity for the petalichthyids will potentially rejecting the homology between these shared similarities, it will have a big impact on current debated on placoderm phylogeny. Nonetheless, these cranio-articular characters have not been properly tested in a phylogenetic analysis on petalichthyids, as they are not presented in \cite{pan2015new} data matrix. Since some putative petalichthyids, such as \textit{Eurycaraspis}, have been used as examples of petalichthyids in some recent analyses \citep{dupret2004phylogenetic,Dupret2007,Dupret2009}, a deeper understanding of the systematics of the Petalichthyida will be crucial as their unique combination of features constitute one of the main issues regarding placoderm monophyly and early gnathostomes evolution.
+
+\newpage
+\chapter{\LARGE{\textcolor{MidnightBlue}{The first report of a parasphenoid in Petalichthyida (Placodermi) and its evolutionary implications}}}
+
+\begin{center}
+\textbf{Abstract}
+\end{center}
+
+\begin{small}Placoderms are the only known stem-group jawed vertebrates with actual jaws and their phylogenetic relationships have become central to the question of early gnathostome anatomical conditions. Among placoderms, the petalichthyids have become a focal point of research as they possess unusual characters otherwise seen only in jawless stem gnathostomes, suggesting the group may be paraphyletic. We demonstrate for the first time the presence of a parasphenoid bone on the palate of \textit{Shearsbyaspis oepiki}, an exceptionally preserved petalichthyid from the Early Devonian of Australia, using x-ray computed microtomography. It is broad in shape, densely denticulated, with an undivided and posteriorly placed buccohypophysial foramen. The presence corroborates earlier placements of petalichthyids as close relatives of arthrodires, raising some questions about current proposals of placoderm paraphyly. We explore several alternative hypotheses of placoderm phylogeny in light of parasphenoid distribution and other new fossil discoveries. The parasphenoid of \textit{Shearsbyaspis} adds to the growing body of data that challenges placoderm paraphyly
+\end{small}
+
+\section{Introduction}
+Placoderms, jawed stem gnathostomes, provide critical evidence on the early evolution of primitive jawed vertebrate anatomy. Their rich fossil record spans the Silurian to the end of the Devonian period, and they provide the only examples of stem-group gnathostomes known to possess jaws. Current debate concerns their monophyly \citep{Goujet1984a,Goujet2001,Young1986,goujet2004placoderm} or paraphyly \citep{brazeau2009braincase,davis2012,zhu2013silurian} with respect to crown-group (i.e. 'modern') gnathostomes, with each scenario having different phylogenetic and palaeobiological implications for early gnathostome evolution \citep{zhu2013silurian,Dupret2014,long2015copulation}. Although all published numerical analyses of placoderm relationships have recovered placoderms as a grade, statistical support for this arrangement has decayed with successive analyses and unexpected discoveries have cast this scenario into some doubts \citep{long2009devonian,long2015copulation,brazeau2014characters,giles2015osteichthyan}.
+
+Central to this debate are the petalichthyid placoderms, due to their superficial and endocranial resemblance to the osteostracans \citep{Janvier1996a,brazeau2009braincase,brazeau2014characters}—the extinct jawless outgroup of jawed vertebrates. This contrasts strongly with the braincases of arthrodires—the most speciose and well understood placoderm subgroup \citep{Stensi1963b,Stensi1969,Denison1978,Goujet1984a}. Arthrodires have stronger external and endocranial resemblances to crown-group gnathostomes than jawless outgroups, and have often served as proxies for general placoderm cranial conditions. This dichotomy in cranial conditions underpins arguments for placoderm paraphyly as well as the state of primitive gnathostome cranial conditions \citep{brazeau2014characters}.
+
+Here, we present the first report of a parasphenoid bone in the petalichthyid \textit{Shearsbyaspis oepiki} \citealt{Young1985}, from the Early Devonian of Australia. The parasphenoid is a dermal bone on the roof of the mouth in some gnathostomes, and usually surrounds the hypophysial opening. It is a highly retained character of osteichthyans (bony gnathostomes, including tetrapods), as well as being observed in several groups of placoderms (review in \citealt{Dennis-Bryan1995}; but only convincingly documented in arthrodires). Its presence has been regarded either as a synapomorphy of placoderms and the osteichthyans \citep{Gardiner1984a,Gardiner1984b} as a plesiomorphic feature of jawed vertebrates \citep{Dennis-Bryan1995} or a synapomorphy of arthrodires, implying non-homology with the osteichthyan parasphenoid \citep{Young1986,Goujet2001}. The unexpected discovery here of an unequivocal parasphenoid in a petalichthyid broadens the distribution of this character among placoderms. This new observation raises questions about the relationships of petalichthyids and arthrodires, and thus about the status of placoderm paraphyly as well.
+
+\section{Material and Methods}
+We examined the acid-prepared holotype of \textit{Shearsbyaspis oepiki}, Natural History Museum, London (NHM) specimen P33580, collected in the Murrumbidgee Group of the Taemas Formation (Emsian), in New South Wales, Australia \citep{Young1985}. We investigated the specimen using x-ray computed microtomography (XR-µCT), conducted at the Imaging and Analysis Centre at the Natural History Museum in London using the Metris X- Tek HMX ST 225 CT System. To maximise contrast, 6284 projections were made. We used x-ray settings of 180 kV, 180 µA, and a 0.1 mm thick copper filter, and a resulting voxel size of 15.3 µm. Tomography images were segmented with the software Mimics 15.01 (Materialise Technologielaan, Leuven, Belgium).
+
+\begin{figure}[!h]
+\centering
+    \includegraphics[scale=0.9]{FIGURES/PARASPHENOIDPAPER.png}
+\caption{\footnotesize{(a) \textit{Shearsbyaspis oepiki}, holotype (P33580) in dorsal view; (b) 3D model of the skull (pink), braincase (light blue) and parasphenoid (blue), in ventral view; (c) parasphenoid in coronal section from CT scan; (d) 3D of the parasphenoid in ventral view; (e) parasphenoid in axial section from CT scan.}}
+\label{parasphnoidtable}
+\end{figure}
+
+\section{Morphological description}
+Tomography of NHM P33580 shows a partial neurocranium represented a largely intact perichondral shell partly embedded in matrix. At mid-length along the basicranial surface, surrounding the hypophyseal opening is a distinct, spongiose ossification applied to the perichondral bone which we identify as the parasphenoid bone (fig. \ref{parasphnoidtable}). The sub-transverse and sub-parasagittal tomography orientations reveal that the bone has a clear separation from the perichondral surface and is thus a separate ossification. Segmentation and rendering reveal the three-dimensional structure (fig. \ref{parasphnoidtable} a, c, d). The bone is as wide as it is long and possesses a pair of lateral projections anteriorly (fig. \ref{parasphnoidtable} d), giving it a pentagonal shape. The buccohypophysial foramen is a distinct, subcircular opening posterior to the centre of the parasphenoid. The opening is situated in a round depression surrounded by a raised ridge (fig. \ref{parasphnoidtable} d). The central part of the element, near the buccohypophysial opening, is thicker compared to the margins, with a distinct spongiose bone structure (fig. \ref{parasphnoidtable} e). The ventral (oral) surface of the bone bears irregularly sized denticles (fig. \ref{parasphnoidtable} a, d, e), unevenly distributed, and increasing in size near the buccohypophysial foramen. The parasphenoid shows no foramina for the paired hypophysial vein, differing from the general arthrodire condition \citep{Stensi1963a,Goujet1984a,dupret2010revision}.
+
+\section{Discussion}
+The discovery of a parasphenoid in a petalichthyid has important taphonomic and phylogenetic implications for early gnathostomes. A parasphenoid is otherwise only observed in crown-group osteichthyans and arthrodire placoderms. Reports of a parasphenoid in \textit{Kosoraspis} \citep{Gross1959} and \textit{Bothriolepis} \citep{Young1986,Dennis-Bryan1995} are unsubstantiated. In recent phylogenetic analyses of early gnathostomes, petalichthyids appear removed from arthrodires and the gnathostome crown group, owing to resemblances of the orbital regions of the braincase to the jawless osteostracan outgroup \citep{Janvier1996a,brazeau2014characters} (fig. \ref{parasphenoidclado} a). However, earlier analyses working under the presupposition of placoderm monophyly united petalichthyids with ptyctodonts and arthrodires \citep{GoujetandYoung1995,goujet2004placoderm} (fig. \ref{parasphenoidclado} b), often influencing the use of petalichthyids as an outgroup in arthrodire phylogenetics \citep{dupret2004phylogenetic}. Indeed, the earliest known petalichthyids (“quasipetalichthyids”) \citep{Zhu1991,pan2015new} bear strong external resemblances to early arthrodires, such as \textit{Bryantolepis} \citep{Elliott2010} and \textit{Wuttagoonaspis} \citep{Ritchie}. 
+
+This latter arrangement is corroborated by the shared presence of a parasphenoid in petalichthyids and arthrodires. If arthrodires and petalichthyids are united by the presence of a parasphenoid, then this undermines the case for placoderm paraphyly \citep{brazeau2014characters}.A re-united Placodermi must take into account observations that were unavailable to previous authors who debated placoderm intrarelationships within this scheme. The osteichthyan-like facial skeleton of \textit{Entelognathus} \citep{zhu2013silurian} would have to be accounted for by placing this taxon as an outgroup of Placodermi or Placodermi + Crown-group Gnathostomata (fig. \ref{parasphenoidclado} c). Given the arthrodire-like gestalt of \textit{Entelognathus}, this new outgrouping could invert traditional scenarios, placing arthrodires as the sister group to the remaining placoderm clade (fig. \ref{parasphenoidclado} c), implying that many apparent osteostracan-like features of petalichthyids and \textit{Brindabellaspis} are secondarily derived.
+
+Resolving these alternatives can be assisted by determining the actual distribution of parasphenoids in stem gnathostomes. The discovery of a parasphenoid in \textit{Shearsbyaspis} suggests that the distribution of this bone amongst placoderms has been underestimated. In taxa lacking an interdigitating suture between the basicranium and the parasphenoid, the parasphenoid may easily become detached post-mortem and therefore be unpreserved or unassociated with the braincase \citep{Goujet1984a,carr2010two,Zhu2013}. For that reason, most authors have coded this trait as uncertainty ‘?’ for many osteichthyan-like and placoderm taxa in phylogenetic data matrices. We therefore urge careful investigation of the preservation of early gnathostome taxa prior to coding the absence of parasphenoids.
+
+\begin{figure}[!h]
+\centering
+    \includegraphics[scale=0.5]{FIGURES/parasphenoidclado.png}
+\caption{\footnotesize{The distribution of the parasphenoid in the three competing hypotheses of placoderms phylogeny; (a) placoderm paraphyly (modified from \citealt{giles2015osteichthyan}); (b) placoderm monophyly with highly nested Arthrodira and Petalichthyida (modified from \citealt{GoujetandYoung1995}) and presumed outgroups attached manually; (c) proposed alternative phylogeny in which arthrodires are the sister group of the remaining Placodermi}}
+\label{parasphenoidclado}
+\end{figure}
+
+\newpage
+\begin{center}
+\noindent{\huge{\textbf{\textcolor{MidnightBlue}{Phd Timeline and Notes}}}}
+
+\end{center}
+
+\begin{figure}[!htpb]
+\hspace{-1cm}
+    \includegraphics[scale=2]{FIGURES/phdtimeline.png}
+\caption{\footnotesize{PhD plan for 2016.}}
+\end{figure}
+
+{\large{\textbf{Notes}}}: 
+
+This report has been produced in LaTex document markup language. Using LaTex allows to edit a document in a easier and more thorough way than using standard word processing softwares like Microsoft Words. In fact, LaTeX documents are written in plain text instead of a formatted text and use tags and templates to create a final document. This permits to focus on the content of the document rather than on the layout of the text, figures and tables that can take a certain amount of writing time.
+The final document can then be compiled into an easily exportable PDF file, suitable for printing or digital distribution.
+
+This LaTeX document will be used as a template for my thesis. I used a standard report layout that I customised to comply with the Imperial College thesis format requirements. This way, I will be able to write my thesis using this template with the possibility making changes in a very easy way (thus making the thesis writing part of my PhD more easy). Using LaTeX also allows adding customized layouts from scientific journal. I can therefore easily to format my chapters into drafts complying with specific journals requirements by simply including their specific layout templates.
+
+
+\bibliography{References}
+
+\end{document}
